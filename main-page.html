@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main-page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wait-msg">
+        Wait for a sec
+    </div>
+    <div class="container-2">
+        <h2>Welcome To The Weather App</h2>
+        <p>Here is your current location</p>
+        <div class="altitude">
+            <div class="lat">Lat: 28.63</div>
+            <div class="long">Long: 27.22</div>
+        </div>
+
+
+        <!-- container for google map -->
+        <div class="map-container">
+            <iframe src="https://maps.google.com/maps?q=30.2893, 79.1579&output=embed" frameborder="0" style="border: 0;"></iframe>
+        </div>
+
+    </div>
+
+    <div class="weather-detail-container">
+        <h3>Your Weather Data</h3>
+        <div class="col1">
+            <div class="location data-box"> Location: New Delhi </div>
+            <div class="wind-speed data-box">Wind Speed:  100kmph</div>
+            <div class="humidity data-box">Humidity : 10</div>
+        </div>
+        <div class="col1">
+            <div class="timezone data-box">Time Zone : GMT +5:30</div>
+            <div class="pressure data-box">Pressure: 10atm</div>
+            <div class="wind-direction data-box">Wind Direction : North West</div>
+        </div>
+        <div class="col1">
+            <div class="uv-index data-box">UV Index : 400</div>
+            <div class="feels-like data-box">Feels like: 30°</div>
+        </div>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
