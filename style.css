@@ -211,6 +211,28 @@ body{
 
 }
 @media screen and (max-width:564px) {
+    .app-title{
+        width: 352px;
+        height: 64px;
+        font-family: Montserrat;
+        font-size: 45px;
+        margin-bottom: 28px;
+    
+    
+    }
+    #fetch-data{
+        margin-inline: auto;
+        border: none;
+        outline: none;
+        width: 220px;
+        border-radius: 22px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 23px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
     .lat{
     width: 240px;
     height: 40px;
