@@ -4,6 +4,8 @@ const container_2=document.getElementsByClassName("container-2")[0];
 const map_container=document.getElementsByClassName("map-container")[0];
 const weather_detail_container=document.getElementsByClassName("weather-detail-container")[0];
 const wait_msg=document.getElementsByClassName("wait-msg")[0];
+const map_box=document.getElementsByTagName("iframe")[0];
+
 var lat;
 var long;
 
@@ -25,6 +27,7 @@ function showerror(err){
 }
 
 
+
  
 setTimeout(() => {
     async function checkWeather(){
@@ -37,6 +40,8 @@ setTimeout(() => {
             map_container.style.display="block";
             weather_detail_container.style.display="block"
             wait_msg.style.display="none";
+            map_box.src=`https://maps.google.com/maps?q=${lat}, ${long}&output=embed`;
+
             
             console.log(data);
 
